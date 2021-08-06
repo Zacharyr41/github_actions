@@ -12,4 +12,4 @@ response_two = requests.post('http://127.0.0.1:5000/listtodict', params={'lst' :
 print("RESPONSE TWO: ", response_two.text)
 print("RESPONSE TWO CODE: ", response_two.status_code)
 
-assert response_two.status_code == 220, f"Incorrect Request Format: Invalid Response with code {response.status_code}"
+assert response_two.status_code == 200, f"Incorrect Request Format: Invalid Response with code {response.status_code}"
