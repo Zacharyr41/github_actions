@@ -17,6 +17,7 @@ def sum_plus_one(x : int):
 
 @app.post("/listtodict")
 def to_dict_from_tuple(lst : str):
+    print("Before conversion: ", lst)
     lst = ast.literal_eval(lst)
     if type(lst) != list or len(lst) < 2:
         return json.dumps({"Error" : "Tuple must be of length two or greater"})
