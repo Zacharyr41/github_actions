@@ -28,6 +28,9 @@ jobs:
     - name: Install Requests
       run: |
         python -m pip install requests
+    - name: Install Uvicorn
+      run: |
+        python -m pip install uvicorn
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
