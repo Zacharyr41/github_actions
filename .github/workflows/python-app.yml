@@ -42,4 +42,4 @@ jobs:
         cd app && uvicorn main:app --host 127.0.0.1 --port 5000 &
         sleep 2
         python3 tests/integration/test_integration.py
-        kill -9 `lsof -i:5000 -t
+        kill -9 `lsof -i:5000 -t`
